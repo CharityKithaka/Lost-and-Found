@@ -23,8 +23,10 @@ $resultn = mysqli_query($db, "SELECT * FROM passport ORDER BY time DESC ");
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/styles5.css">
+    <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
     <meta charset="utf-8">
     <title>PATA</title>
+    <link rel="icon" type="img/jpg" href="img/pata.png">
 </head>
 
 <body>
@@ -74,7 +76,7 @@ $resultn = mysqli_query($db, "SELECT * FROM passport ORDER BY time DESC ");
 
 <center>
 
-    <h1>Random Documents</h1>
+    <h1 style="font-family: 'Poor Story', cursive;">Random Documents</h1>
 </center>
 <div class="content">
 
@@ -83,7 +85,7 @@ $resultn = mysqli_query($db, "SELECT * FROM passport ORDER BY time DESC ");
         while ($row = mysqli_fetch_array($result)) {
             echo "<div class='col-md-6'>";
             echo "<div class='panel panel-info'>";
-            echo "<div class='panel-heading'>";
+            echo "<div class='panel-heading' style='background-color: #3c3d41; color: whitesmoke'>";
 
             echo "<h2 class='panel-title'>" .$row['image_name']."</h2>";
 
@@ -118,7 +120,7 @@ $resultn = mysqli_query($db, "SELECT * FROM passport ORDER BY time DESC ");
         while ($row = mysqli_fetch_array($results)) {
             echo "<div class='col-md-6'>";
             echo "<div class='panel panel-info'>";
-            echo "<div class='panel-heading'>";
+            echo "<div class='panel-heading' style='background-color: #3c3d41; color: whitesmoke'>";
 
             echo "<h2 class='panel-title'>" .$row['image_name']."</h2>";
 
@@ -153,7 +155,7 @@ $resultn = mysqli_query($db, "SELECT * FROM passport ORDER BY time DESC ");
         while ($row = mysqli_fetch_array($resultn)) {
             echo "<div class='col-md-6'>";
             echo "<div class='panel panel-info'>";
-            echo "<div class='panel-heading'>";
+            echo "<div class='panel-heading' style='background-color: #3c3d41; color: whitesmoke'>";
 
             echo "<h2 class='panel-title'>" .$row['image_name']."</h2>";
 
@@ -211,7 +213,7 @@ $resultn = mysqli_query($db, "SELECT * FROM passport ORDER BY time DESC ");
 
             </div>
             <div class="col-md-3" id="pata">
-                <a href="index.php"><img src="img/pata.png" alt="logo"></a>
+                <a href="indexy.php"><img src="img/pata.png" alt="logo"></a>
             </div>
         </div>
         <div class="footer-copyright">

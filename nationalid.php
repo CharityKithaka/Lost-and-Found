@@ -11,12 +11,14 @@ $result = mysqli_query($db, "SELECT * FROM nationalid ORDER BY time DESC");
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lost and Found</title>
+    <title>National ID</title>
+    <link rel="icon" type="img/jpg" href="img/pata.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles5.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <script src="js/jquery-3.3.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
     <script src="js/scriptsj.js"></script>
 
 </head>
@@ -49,14 +51,14 @@ $result = mysqli_query($db, "SELECT * FROM nationalid ORDER BY time DESC");
             <li><a href="student.php">Student ID</a> </li>
         </ul>
     </li>
-    <li role="presentation"><a href="#">About</a></li>
-    <li role="presentation"><a href="contact.html">Contact Us</a></li>
+    <li role="presentation"><a href="about.php">About</a></li>
+    <li role="presentation"><a href="contact.php">Contact Us</a></li>
     <li role="presentation" id="sign"><a href="login.php">SIGN UP/LOGIN</a></li>
 </ul>
 
 
 <center>
-<h1>National Identification Documents</h1>
+<h1 style="font-family: 'Poor Story', cursive;">National Identification Documents</h1>
 </center>
 <div class="content">
 
@@ -65,7 +67,7 @@ $result = mysqli_query($db, "SELECT * FROM nationalid ORDER BY time DESC");
         while ($row = mysqli_fetch_array($result)) {
     echo "<div class='col-md-4'>";
         echo "<div class='panel panel-info'>";
-            echo "<div class='panel-heading'>";
+            echo "<div class='panel-heading' style='background-color: #3c3d41; color: whitesmoke'>";
 
                 echo "<h2 class='panel-title'>" .$row['image_name']."</h2>";
 

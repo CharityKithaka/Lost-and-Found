@@ -3,6 +3,7 @@
 <html>
 <head>
   <title>Log in</title>
+    <link rel="icon" type="img/jpg" href="img/pata.png">
   <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles5.css">
   <link rel="stylesheet" href="css/styles.css">

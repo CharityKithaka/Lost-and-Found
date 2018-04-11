@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About us</title>
+    <link rel="icon" type="img/jpg" href="img/pata.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles3.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
@@ -13,6 +14,9 @@
 </head>
 
 <body>
+
+
+
     <div class="jumbotron">
 
         <div class="text-center" style="padding: 25%">

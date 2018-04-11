@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Register!</title>
+    <link rel="icon" type="img/jpg" href="img/pata.png">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles2.css">
 </head>
