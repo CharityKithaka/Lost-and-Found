@@ -17,7 +17,7 @@
         <input type="text" name="username" placeholder="Username">
         <p>Password:</p>
         <input type="password" name="password" placeholder="Password"></br>
-            <button type="submit" name="login" class="btn btn-success">Login</button>
+            <button type="submit" name="login" id="login-button">Login</button>
         <p>or Sign up <a href="register.php">here</a></p>
       </form>
     </div>

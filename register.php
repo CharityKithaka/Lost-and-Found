@@ -17,7 +17,7 @@
           <input type="password" name="password_1" placeholder="Choose password">
           <input type="password" name="password_2" placeholder="Re-enter password">
             <center>
-            <button type="submit" name="register" class="btn btn-success">Sign Up</button>
+            <button type="submit" name="register" id="signup-button">Sign Up</button>
             </center>
       </form>
         <br>
