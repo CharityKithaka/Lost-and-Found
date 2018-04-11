@@ -13,6 +13,7 @@ $result = mysqli_query($db, "SELECT * FROM passport ORDER BY time DESC");
     <meta charset="UTF-8">
     <title>Lost and Found</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles5.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <script src="js/jquery-3.3.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,24 +21,39 @@ $result = mysqli_query($db, "SELECT * FROM passport ORDER BY time DESC");
 
 </head>
 <body>
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">Pata!</a>
-        </div>
-        <ul class="nav navbar-nav">
 
+<div class="jumbotron">
+    <h1><a href="index.php"><img src="img/pata.png" alt="" id="logo"></a></h1>
+</div>
+<ul class="nav nav-pills" id="nav2">
+    <li role="presentation" class="active"><a href="index.php">Home</a></li>
+
+    <li role="presentation" class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            Post <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a href="nationalid_upload.php">National ID</a> </li>
+            <li><a href="passport_upload.php">Passports</a> </li>
+            <li><a href="student_upload.php">Student ID</a> </li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li><button class="btn btn-warning navbar-btn">Post</button></li>
-            <li><button class="btn btn-danger navbar-btn">Find</button></li>
-            <li><button class="btn btn-success navbar-btn">Contacts</button></li>
-            <li><button class="btn btn-success navbar-btn">About</button></li>
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            <li><a href="passport.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+    </li>
+    <li role="presentation" class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            Find <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a href="nationalid.php">National ID</a> </li>
+            <li><a href="passport.php">Passports</a> </li>
+            <li><a href="student.php">Student ID</a> </li>
         </ul>
-    </div>
-</nav>
+    </li>
+    <li role="presentation"><a href="#">About</a></li>
+    <li role="presentation"><a href="contact.html">Contact Us</a></li>
+    <li role="presentation" id="sign"><a href="login.php">SIGN UP/LOGIN</a></li>
+</ul>
+
+
 <center>
     <h1>Passports</h1>
 </center>
@@ -81,7 +97,6 @@ $result = mysqli_query($db, "SELECT * FROM passport ORDER BY time DESC");
     </div>
 </div>
 
-<a href="nationalid.php">NationalID</a>
 
 
 </body>

@@ -5,7 +5,6 @@
 a :hover {
   color: red;
 }
-
 .jumbotron {
   height: 50%;
   background-image: url(../img/logo.jpg);
@@ -16,7 +15,7 @@ a :hover {
   margin-bottom: 0px;
 }
 
-img {
+#logo {
   width: 25%;
 }
 
@@ -26,7 +25,6 @@ h1 {
 }
 
 footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;

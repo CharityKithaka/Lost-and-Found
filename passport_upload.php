@@ -61,18 +61,18 @@ $result = mysqli_query($db, "SELECT * FROM passport ORDER BY time DESC");
             <div class="col-md-6 col-md-offset-3" >
                 <form method="post" action="passport_upload.php" enctype="multipart/form-data">
                     <label>Name:</label>
-                    <input class="form-control" name="image_name"  placeholder="Enter Name of the Owner..." /><br>
+                    <input class="form-control" name="image_name"  placeholder="Enter Name of the Owner..." required/><br>
 
                     <label>Passport Number:</label>
-                    <input class="form-control" name="image_number"  placeholder="Enter the National ID number..." /><br>
+                    <input class="form-control" name="image_number"  placeholder="Enter the National ID number..." required/><br>
 
                     <label>Location:</label>
-                    <input class="form-control" name="location"  placeholder="Enter your location..." /><br>
+                    <input class="form-control" name="location"  placeholder="Enter your location..." required/><br>
 
                     <label>Upload file:</label>
                     <input type="hidden" name="size" value="1000000">
                     <div>
-                        <input type="file" name="image" multiple>
+                        <input type="file" name="image" multiple required/>
                     </div>
                     <div>
                     </div>

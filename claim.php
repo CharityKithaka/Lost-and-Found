@@ -20,7 +20,7 @@ if(empty($_SESSION['username'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/scriptsj.js"></script>
 </head>
-<body>
+<body background="img/background.jpg">
 
 <div class="col-md-6">
 <img src="claim.jpg" width="600px" height="600px">
