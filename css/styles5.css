@@ -131,3 +131,13 @@ footer {
 footer a {
   font-size: 20px;
 }
+
+#signup-button{
+  height: 40px;
+  background-color: #cc263a;
+  color: white;
+  font-size: 20px;
+  border: 0;
+  border-radius: 20px;
+  margin-top: 10%;
+}

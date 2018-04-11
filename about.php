@@ -41,22 +41,22 @@
                 <div class="quarter">
                     <img src="Images/pic.png" alt="Boss" style="width:50%">
                     <h3>Pascal Ogwel</h3>
-                    <p>Web Designer</p>
+                    <p>Project Manager</p>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="quarter">
                     <img src="Images/pic.png" alt="Boss" style="width:50%">
                     <h3>Joel Akwam</h3>
-                    <p>Support</p>
+                    <p>Designer</p>
                 </div>
             </div>
 
             <div class="col-md-3">
                 <div class="quarter">
-                    <img src="Images/pic.png" alt="Boss" style="width:50%">
+                    <img src="Images/brian.JPG" alt="Boss" style="width:50%; border-radius: 50%">
                     <h3>Brian Silgai</h3>
-                    <p>Support</p>
+                    <p>Programmer</p>
                 </div>
             </div>
 
@@ -64,7 +64,7 @@
                 <div class="quarter">
                     <img src="Images/pic.png" alt="Boss" style="width:50%">
                     <h3>Charity Kithaka</h3>
-                    <p>Support</p>
+                    <p>Developer</p>
                 </div>
             </div>
         </div>

@@ -97,7 +97,35 @@ $result = mysqli_query($db, "SELECT * FROM passport ORDER BY time DESC");
     </div>
 </div>
 
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <h3>Get Started</h3>
+                <a href="index.php">Home</a><br>
+                <a href="register.php">Sign up</a><br>
+                <a href="login.php">Login</a>
+            </div>
+            <div class="col-md-3">
+                <h3>About US</h3>
+                <a href="about.php">Our Team</a><br>
+                <a href="about.php">Mission Statement</a><br>
+                <a href="about.php">Our Vision</a>
+            </div>
+            <div class="col-md-3">
+                <h3>Support</h3>
+                <a href="contact.php">Our Contacts</a><br>
 
+            </div>
+            <div class="col-md-3" id="pata">
+                <a href="index.php"><img src="img/pata.png" alt="logo"></a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2018 Copyright </p>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>

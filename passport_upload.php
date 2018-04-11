@@ -53,8 +53,8 @@ $result = mysqli_query($db, "SELECT * FROM passport ORDER BY time DESC");
 
 <fieldset>
     <center>
-        <h1 id="tr">Upload lost Passport</h1>
-        <h2>rade</h2>
+        <h1>Upload lost Passport</h1>
+
     </center>
     <div class="container" style="margin-top:100px;">
         <div class="row justify-content-header">

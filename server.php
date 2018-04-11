@@ -54,7 +54,7 @@ if (isset($_POST['register'])) {
         $_SESSION['success'] = "Hey you are logged in!";
 
         // redirect to home page
-        header('location: claim.php');
+        header('location: indexy.php');
     }
 }
 
@@ -74,14 +74,14 @@ if (isset($_POST['login'])) {
     }
 
     if (count($errors) == 0) {
-        $password =md5($password); // encrypt password before comparing with that from database
+        $password =hash('sha256',$password); // encrypt password before comparing with that from database
         $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
         $result = mysqli_query($db, $query);
         if (mysqli_num_rows($result) == 1) {
             //log user in
             $_SESSION['username'] = $username;
             $_SESSION['success'] = "You are logged in";
-            header('location" index.php'); // redirect to home page
+            header('location" indexy.php'); // redirect to home page
         }
 
         else if (count($errors) != 0) {

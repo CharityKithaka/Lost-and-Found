@@ -13,6 +13,7 @@ $resultn = mysqli_query($db, "SELECT * FROM passport ORDER BY time DESC ");
 
 <head>
   <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
   <link rel="stylesheet" href="css/styles5.css">
   <meta charset="utf-8">
   <title>PATA</title>
@@ -27,16 +28,17 @@ $resultn = mysqli_query($db, "SELECT * FROM passport ORDER BY time DESC ");
   <ul class="nav nav-pills" id="nav2">
     <li role="presentation" class="active"><a href="index.php">Home</a></li>
 
-    <li role="presentation" class="dropdown">
-      <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-      Post <span class="caret"></span>
-    </a>
-      <ul class="dropdown-menu">
-        <li><a href="nationalid_upload.php">National ID</a> </li>
-        <li><a href="passport_upload.php">Passports</a> </li>
-        <li><a href="student_upload.php">Student ID</a> </li>
-      </ul>
-    </li>
+      <li role="presentation" class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              Post <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+              <li><a href="login.php">National ID</a> </li>
+              <li><a href="login.php">Passports</a> </li>
+              <li><a href="login.php">Student ID</a> </li>
+          </ul>
+      </li>
+
     <li role="presentation" class="dropdown">
       <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
       Find <span class="caret"></span>
@@ -47,12 +49,13 @@ $resultn = mysqli_query($db, "SELECT * FROM passport ORDER BY time DESC ");
         <li><a href="student.php">Student ID</a> </li>
       </ul>
     </li>
-    <li role="presentation"><a href="#">About</a></li>
-    <li role="presentation"><a href="contact.html">Contact Us</a></li>
-    <li role="presentation" id="sign"><a href="login.php">SIGN UP/LOGIN</a></li>
+    <li role="presentation"><a href="about.php">About</a></li>
+    <li role="presentation"><a href="contact.php">Contact Us</a></li>
+    <li role="presentation" id="sign"><a href="login.php">LOGIN/SIGN UP</a></li>
   </ul>
 
   <center>
+
       <h1>Random Documents</h1>
   </center>
   <div class="content">
@@ -174,23 +177,23 @@ $resultn = mysqli_query($db, "SELECT * FROM passport ORDER BY time DESC ");
       <div class="row">
         <div class="col-md-3">
           <h3>Get Started</h3>
-          <a href="#">Home</a><br>
-          <a href="#">Sign up</a><br>
-          <a href="#">Login</a>
+          <a href="index.php">Home</a><br>
+          <a href="register.php">Sign up</a><br>
+          <a href="login.php">Login</a>
         </div>
         <div class="col-md-3">
           <h3>About US</h3>
-          <a href="#">Our Team</a><br>
-          <a href="#">Mission Statement</a><br>
-          <a href="#">Our Vision</a>
+          <a href="about.php">Our Team</a><br>
+          <a href="about.php">Mission Statement</a><br>
+          <a href="about.php">Our Vision</a>
         </div>
         <div class="col-md-3">
           <h3>Support</h3>
-          <a href="#">Our Contacts</a><br>
-          <a href="#">Physical Address</a>
+          <a href="contact.php">Our Contacts</a><br>
+
         </div>
         <div class="col-md-3" id="pata">
-          <a href="index.php"><img src="img/pata.png" alt=""></a>
+          <a href="index.php"><img src="img/pata.png" alt="logo"></a>
         </div>
       </div>
       <div class="footer-copyright">

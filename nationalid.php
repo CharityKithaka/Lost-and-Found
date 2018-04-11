@@ -103,23 +103,23 @@ $result = mysqli_query($db, "SELECT * FROM nationalid ORDER BY time DESC");
         <div class="row">
             <div class="col-md-3">
                 <h3>Get Started</h3>
-                <a href="#">Home</a><br>
-                <a href="#">Sign up</a><br>
-                <a href="#">Login</a>
+                <a href="index.php">Home</a><br>
+                <a href="register.php">Sign up</a><br>
+                <a href="login.php">Login</a>
             </div>
             <div class="col-md-3">
                 <h3>About US</h3>
-                <a href="#">Our Team</a><br>
-                <a href="#">Mission Statement</a><br>
-                <a href="#">Our Vision</a>
+                <a href="about.php">Our Team</a><br>
+                <a href="about.php">Mission Statement</a><br>
+                <a href="about.php">Our Vision</a>
             </div>
             <div class="col-md-3">
                 <h3>Support</h3>
-                <a href="#">Our Contacts</a><br>
-                <a href="#">Physical Address</a>
+                <a href="contact.php">Our Contacts</a><br>
+
             </div>
             <div class="col-md-3" id="pata">
-                <a href="index.php"><img src="img/pata.png" alt=""></a>
+                <a href="index.php"><img src="img/pata.png" alt="logo"></a>
             </div>
         </div>
         <div class="footer-copyright">
