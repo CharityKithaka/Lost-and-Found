@@ -1,0 +1,24 @@
+.jumbotron {
+    background-color: black;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 80vh;
+    padding: 15vh;
+    margin: 15vh;
+}
+
+.col-md-3 img {
+    border-radius: 50%;
+    background-color: #62C465;
+    padding: 15px;
+}
+
+h3 {
+    font-family: 'Pacifico';
+    color:rgb(130, 130, 194);
+}
+p{
+    color: pink;
+}
