@@ -1,3 +1,11 @@
+<?php include ('server.php');
+
+//if user is not logged in,they cannot access this page
+if(empty($_SESSION['username'])) {
+    header('location:login.php');
+}
+
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -13,6 +21,7 @@
     <script src="js/scriptsj.js"></script>
 </head>
 <body>
+
 <div class="col-md-6">
 <img src="claim.jpg" width="600px" height="600px">
 </div>
@@ -22,6 +31,25 @@
     <p class="con"><strong>Email:</strong><a href="mailto:briansigilai@gmail.com? subject=Hey%20Nguys" style="text-transform: lowercase">briansigilai@gmail.com</lo></a></p>
 
         <p class="con"><strong>&phone;:</strong><a href="tel:0792071275">0792071275</a></p>
+    </div>
+    <div class="content">
+        <?php if  (isset($_SESSION['success'])): ?>
+            <div class="error success">
+                <h3>
+                    <?php
+                    echo $_SESSION['success'];
+                    unset($_SESSION['success']);
+                    ?>
+                </h3>
+
+            </div>
+        <?php endif ?>
+
+        <?php if (isset($_SESSION["username"])): ?>
+            <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p><br >
+
+            <p><a href="claim.php?logout='1'" style="color":red;">Logout</a></p>
+        <?php endif ?>
     </div>
 </div>
 

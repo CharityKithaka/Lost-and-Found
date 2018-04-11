@@ -1,39 +1,3 @@
-<?php
-// Create database connection
-$db = mysqli_connect("localhost", "root", "", "lost_and_found");
-
-// Initialize message variable
-$msg = "";
-
-// If upload button is clicked ...
-if (isset($_POST['upload'])) {
-    // Get image name
-    $image = $_FILES['image']['name'];
-    // Get details
-    $image_name = mysqli_real_escape_string($db, $_POST['image_name']);
-    $image_number = mysqli_real_escape_string($db, $_POST['image_number']);
-    $location = mysqli_real_escape_string($db, $_POST['location']);
-
-    // image file directory
-    $target = "national/".basename($image);
-
-    $sql = "INSERT INTO nationalid (image,image_name,image_number,location) VALUES ('$image', '$image_name','$image_number','$location')";
-    // execute query
-    $result=mysqli_query($db,$sql);
-
-    if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
-        $msg = "Image uploaded successfully";
-    }else{
-        $msg = "Failed to upload image";
-    }
-
-    if($result==TRUE){
-        echo "<p style='color:chocolate'>Your post  is successfully Uploaded!</p>";
-    }
-}
-$result = mysqli_query($db, "SELECT * FROM nationalid ORDER BY time DESC");
-?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -82,6 +46,42 @@ $result = mysqli_query($db, "SELECT * FROM nationalid ORDER BY time DESC");
                     </div>
                     <br>
                 </form>
+                <?php
+                // Create database connection
+                $db = mysqli_connect("localhost", "root", "", "lost_and_found");
+
+                // Initialize message variable
+                $msg = "";
+
+                // If upload button is clicked ...
+                if (isset($_POST['upload'])) {
+                    // Get image name
+                    $image = $_FILES['image']['name'];
+                    // Get details
+                    $image_name = mysqli_real_escape_string($db, $_POST['image_name']);
+                    $image_number = mysqli_real_escape_string($db, $_POST['image_number']);
+                    $location = mysqli_real_escape_string($db, $_POST['location']);
+
+                    // image file directory
+                    $target = "national/".basename($image);
+
+                    $sql = "INSERT INTO nationalid (image,image_name,image_number,location) VALUES ('$image', '$image_name','$image_number','$location')";
+                    // execute query
+                    $result=mysqli_query($db,$sql);
+
+                    if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
+                        $msg = "Image uploaded successfully";
+                    }else{
+                        $msg = "Failed to upload image";
+                    }
+
+                    if($result==TRUE){
+                        echo "<p style='color:chocolate'>Your post  is successfully Uploaded!</p>";
+                    }
+                }
+                $result = mysqli_query($db, "SELECT * FROM nationalid ORDER BY time DESC");
+                ?>
+
                 <p>Click <a href="nationalid.php">here</a> to go back</p>
 
             </div>

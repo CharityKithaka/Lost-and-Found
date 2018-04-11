@@ -71,7 +71,7 @@ $result = mysqli_query($db, "SELECT * FROM studentid ORDER BY time DESC ");
 
             echo "<div class='panel-footer'>";
             echo "<center>";
-            echo "<button class='btn warning'>CLAIM<i class='fa fa-plus-square'></i></button>";
+            echo "<a href='claim.php'><button class='btn warning'>CLAIM<i class='fa fa-plus-square'></i></button></a>";
             echo "</center>";
             echo "</div>";
             echo "</div>";
