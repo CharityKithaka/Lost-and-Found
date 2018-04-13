@@ -20,7 +20,7 @@
 <div class="col-md-6">
     <div class="contacts">
         <h1 class="cont-head">Contact Us To Claim</h1>
-    <p class="con"><strong>Email:</strong><a href="mailto:briansigilai@gmail.com? subject=Hey%20Nguys" style="text-transform: lowercase">briansigilai@gmail.com</lo></a></p>
+    <p class="con"><strong>Email:</strong><a href="mailto:briansigilai@gmail.com? subject=Hey%20Nguys" style="text-transform: lowercase">pata@gmail.com</lo></a></p>
 
         <p class="con"><strong>&phone;:</strong><a href="tel:0792071275">0792071275</a></p>
         <a href="index.php"><button class="btn btn-success">Home</button></a>

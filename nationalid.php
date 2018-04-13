@@ -80,9 +80,9 @@ $result = mysqli_query($db, "SELECT * FROM nationalid ORDER BY time DESC");
                     echo "<h3>DESCRIPTION</h3>";
                     echo"</div>";
                     echo "<div class='desc'>";
-                       echo "<p>Name of The Owner:".$row['image_name']."</p>";
-                    echo "<p>ID Number:".$row['image_number']. "</p>";
-                    echo "<p>Location:".$row['location']."</p>";
+                       echo "<p><strong>Name of The Owner:</strong>".$row['image_name']."</p>";
+                    echo "<p><strong>ID Number:</strong>".$row['image_number']. "</p>";
+                    echo "<p><strong>Location:</strong>".$row['location']."</p>";
 
                     echo "</div>";
                 echo "</div>";

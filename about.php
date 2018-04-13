@@ -17,6 +17,8 @@
 
 
 
+
+
     <div class="jumbotron">
 
         <div class="text-center" style="padding: 25%">
@@ -58,7 +60,7 @@
 
             <div class="col-md-3">
                 <div class="quarter">
-                    <img src="Images/brian.JPG" alt="Boss" style="width:50%; border-radius: 50%">
+                    <img src="Images/pic.png" alt="Boss" style="width:50%">
                     <h3>Brian Silgai</h3>
                     <p>Programmer</p>
                 </div>
