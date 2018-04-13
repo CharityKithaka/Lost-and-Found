@@ -15,12 +15,8 @@
 
 <body>
 
-
-
-
-
     <div class="jumbotron">
-
+        <a href="index.php"><div class="glyphicon glyphicon-home" id="home-btn"></div></a>
         <div class="text-center" style="padding: 25%">
 
             <h2>
