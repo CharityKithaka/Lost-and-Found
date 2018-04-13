@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contacts</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
     <link rel="stylesheet" href="css/styles4.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 
@@ -15,7 +16,7 @@
 <body>
 
 <div class="jumbotron">
-
+    <a href="index.php"><div class="glyphicon glyphicon-home" id="home-btn"></div></a>
     <h3> If you need HELP feel free to talk to Us.</h3>
     <br>
     <div class="col-md-3">

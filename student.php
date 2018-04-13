@@ -1,3 +1,4 @@
+<?php include ('server.php');?>
 <?php
 // Create database connection
 $db = mysqli_connect("localhost", "root", "", "lost_and_found");
@@ -51,8 +52,20 @@ $result = mysqli_query($db, "SELECT * FROM studentid ORDER BY time DESC ");
         </ul>
     </li>
     <li role="presentation"><a href="about.php">About</a></li>
-    <li role="presentation"><a href="contact.php">Contact Us</a></li>
+    <li role="presentation"><a href="contact.php">Contact</a></li>
     <li role="presentation" id="sign"><a href="login.php">SIGN UP/LOGIN</a></li>
+    <?php if  (isset($_SESSION['success'])): ?>
+        <div class="error success">
+
+
+        </div>
+    <?php endif ?>
+
+    <?php if (isset($_SESSION["username"])): ?>
+        <li role="presentation" id="sign"><a href="indexy.php?logout='1'" style="color":red;">Logout</a></li>
+        <li role="presentation" id="sign"><strong><?php echo $_SESSION['username']; ?></strong></li>
+    <?php endif ?>
+
 </ul>
 
 
