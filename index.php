@@ -54,7 +54,7 @@ $resultn = mysqli_query($db, "SELECT * FROM passport ORDER BY time DESC ");
     </li>
     <li role="presentation"><a href="about.php">About</a></li>
     <li role="presentation"><a href="contact.php">Contact Us</a></li>
-    <li role="presentation" id="sign"><a href="login.php">LOGIN/SIGN UP</a></li>
+      <li role="presentation" id="sign"><a href="login.php">SIGN UP/LOGIN</a></li>
   </ul>
 
   <center>
