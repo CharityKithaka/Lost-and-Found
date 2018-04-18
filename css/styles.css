@@ -1,0 +1,67 @@
+body{
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+}
+
+.login{
+  height: 480px;
+  width: 330px;
+  background-color: #1f2328;
+  margin-left: 35%;
+  margin-top: 6%;
+  color: white;
+  font-family: sans-serif;
+  padding-left: 2%;
+  font-size: bold;
+  padding-bottom: 3%;
+}
+
+#avatar{
+  width: 120px;
+  border-radius: 50%;
+  margin-left: 28%;
+  margin-top: -10%;
+}
+
+h1{
+  text-align: center;
+}
+
+input{
+  width: 86%;
+  height: 40px;
+  padding-left: 0;
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  outline: none;
+  font-size: 17px;
+  color: white;
+}
+
+#login-button{
+  width: 91%;
+  margin-top: 5%;
+  height: 40px;
+  background-color: #cc263a;
+  color: white;
+  font-size: 20px;
+  border: 0;
+  border-radius: 20px;
+}
+
+p{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#login-button:hover{
+  cursor: pointer;
+  background: white;
+  color: #000;
+}
+
+a:hover{
+  cursor: pointer;
+  color: white;
+}

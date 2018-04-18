@@ -1,0 +1,31 @@
+/* Orange */
+.warning {
+    border-color: #ff9800;
+    color: orange;
+}
+
+.warning:hover {
+    background: #ff9800;
+    color: white;
+}
+.desc{
+    display: none;
+}
+.header3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.header3{
+    color: limegreen;
+}
+.contacts{
+    padding-top: 320px;
+}
+.con{
+    font-size: 40px;
+}
+.cont-head{
+    color: gold;
+}
+
+

@@ -1,0 +1,46 @@
+body{
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+}
+
+.register{
+  height: 550px;
+  width: 400px;
+  background-color: #1f2328;
+  color: white;
+  margin-left: 35%;
+  padding-top: 3%;
+  margin-top: 4%;
+}
+
+input, #signup-button, h1{
+  margin: 1%;
+  width: 90%;
+  margin-left: 5%;
+}
+
+input{
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  height: 40px;
+  outline: none;
+  color: white;
+  font-size: 15px;
+}
+
+#signup-button{
+  height: 40px;
+  background-color: #cc263a;
+  color: white;
+  font-size: 20px;
+  border: 0;
+  border-radius: 20px;
+  margin-top: 10%;
+}
+
+#signup-button:hover{
+  cursor:pointer;
+  background: white;
+  color: #000;
+}
